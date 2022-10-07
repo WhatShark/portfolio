@@ -5,6 +5,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <Script
+          id="osano"
+          src="https://cmp.osano.com/169mFvTJcW8L8AcR/1636beac-862e-4884-b6cf-1e33fce56bb0/osano.js"
+        ></Script>
         <Script id="google-tag-manager-data-layer">{`window.dataLayer = window.dataLayer || [];`}</Script>
         <Script id="google-tag-manager" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
