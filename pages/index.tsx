@@ -13,7 +13,6 @@ const Home: NextPage = () => {
         <li>Public key: <Link href="/public-key.pub">C956 5B05 9C11 FC53</Link></li>
       </ul>
 
-      <img alt="Picture of a great white shark. Distorted." src="/shark.png"></img>
       <Image src={profilePic} alt="Picture of a great white shark. Distorted." />
     </div>
   )
