@@ -5,21 +5,27 @@ import Image from "next/image";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import SailingIcon from "@mui/icons-material/Sailing";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import KeyIcon from "@mui/icons-material/Key";
 
 const Home: NextPage = () => {
   return (
     <Container maxWidth="md">
       <h1>
-        WhatShark <SailingIcon />
+        Hi, I&apos;m Nathan! <SailingIcon />
       </h1>
-      <p>Software engineering student. Website in development.</p>
+      <p>
+        Software engineering student. Graduating in 2023. Website in
+        development.
+      </p>
       <ul>
         <li>
-          Contact me:{" "}
+          <EmailIcon /> Contact me:{" "}
           <a href="mailto:nathan@whatshark.com">nathan@whatshark.com</a>
         </li>
         <li>
-          GitHub repos:{" "}
+          <GitHubIcon /> GitHub repos:{" "}
           <a
             href="https://github.com/WhatShark/"
             target="_blank"
@@ -29,11 +35,12 @@ const Home: NextPage = () => {
           </a>
         </li>
         <li>
-          Public key: <a href="/public-key.pub">C956 5B05 9C11 FC53</a>
+          <KeyIcon /> Public key:{" "}
+          <a href="/public-key.pub">C956 5B05 9C11 FC53</a>
         </li>
       </ul>
 
-      <Stack spacing={2}>
+      <Stack>
         <div>
           <Image
             src={sharkImage}
