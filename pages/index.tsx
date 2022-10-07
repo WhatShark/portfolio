@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import sharkImage from "../public/img/shark.png";
 import certificationImage from "../public/img/aws-certified-cloud-practitioner.png";
-import Link from "next/link";
 import Image from "next/image";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
@@ -17,16 +16,20 @@ const Home: NextPage = () => {
       <ul>
         <li>
           Contact me:{" "}
-          <Link href="mailto:nathan@whatshark.com">nathan@whatshark.com</Link>
+          <a href="mailto:nathan@whatshark.com">nathan@whatshark.com</a>
         </li>
         <li>
           GitHub repos:{" "}
-          <Link href="https://github.com/WhatShark/">
+          <a
+            href="https://github.com/WhatShark/"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://github.com/WhatShark/
-          </Link>
+          </a>
         </li>
         <li>
-          Public key: <Link href="/public-key.pub">C956 5B05 9C11 FC53</Link>
+          Public key: <a href="/public-key.pub">C956 5B05 9C11 FC53</a>
         </li>
       </ul>
 
@@ -39,17 +42,16 @@ const Home: NextPage = () => {
         </div>
 
         <div>
-          <Link
+          <a
             href="https://www.credly.com/badges/58de69a7-8b90-407e-9615-e54155cbc554/public_url"
             target="_blank"
+            rel="noreferrer"
           >
-            <a target="_blank">
-              <Image
-                src={certificationImage}
-                alt="Certification of AWS Cloud Practioner."
-              />
-            </a>
-          </Link>
+            <Image
+              src={certificationImage}
+              alt="Certification of AWS Cloud Practioner."
+            />
+          </a>
         </div>
       </Stack>
     </Container>
