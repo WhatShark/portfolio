@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>Portfolio | WhatShark</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <CssBaseline />
